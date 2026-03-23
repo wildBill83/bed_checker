@@ -62,7 +62,7 @@ flowchart TD
 
     H --> I{Stable?}
 
-    I -->|Yes| TOL| J[Increment Stable Count]
+    I -->|Yes| J[Increment Stable Count]
     I -->|No| K[Reset Counter]
 
     J --> L{Stable Count >= Required?}
