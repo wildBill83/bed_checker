@@ -103,7 +103,7 @@ flowchart TD
 Create a dedicated config file:
 
 ```bash
-~/printer_data/config/thermal_stability.cfg
+~/printer_data/config/bed_check.cfg
 ```
 
 ---
@@ -111,7 +111,7 @@ Create a dedicated config file:
 ### 2. Include in `printer.cfg`
 
 ```ini
-[include thermal_stability.cfg]
+[include bed_check.cfg]
 ```
 
 ---
@@ -121,7 +121,7 @@ Create a dedicated config file:
 Copy the macro definitions into:
 
 ```
-thermal_stability.cfg
+bed_check.cfg
 ```
 
 > ⚠️ The macros are intentionally kept separate from this README to avoid duplication and drift.
