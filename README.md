@@ -148,7 +148,7 @@ VERIFY_BED_STABILITY_MULTI BED_TEMP=100 WAIT=30
 
 ## 🧪 Integration Example (`START_PRINT`)
 
-This is the **recommended usage pattern**:
+**recommended usage pattern, do not copy it into your START_PRINT**:
 
 ```ini
 [gcode_macro START_PRINT]
@@ -159,6 +159,8 @@ gcode:
     # Start heating (non-blocking)
     M140 S{BED_TEMP}
     M104 S{EXTRUDER_TEMP}
+
+    HEAT_SOAK
 
     # Verify bed thermal stability
     VERIFY_BED_STABILITY_MULTI BED_TEMP={BED_TEMP}
@@ -185,18 +187,6 @@ gcode:
 
 ---
 
-## 🔥 Why This Matters
-
-Traditional workflow:
-
-> “Wait 10 minutes and hope it’s stable”
-
-This system:
-
-> Measures **when the bed actually stops moving**
-
----
-
 ## 🧠 Design Philosophy
 
 This implementation treats your printer as a **feedback system**, not a timer:
@@ -207,18 +197,9 @@ This implementation treats your printer as a **feedback system**, not a timer:
 
 ---
 
-## 🚀 Future Ideas
-
-* 9-point or adaptive grid
-* Mesh-to-mesh delta comparison
-* Automatic mesh skipping if already stable
-* Logging drift over time for diagnostics
-
----
-
 ## 📜 License
 
-MIT (or your preferred license)
+MIT
 
 ---
 
