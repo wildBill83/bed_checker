@@ -47,7 +47,7 @@ Repeat Loop   Early Exit     Final Exit
 
 ---
 
-### 📊 Mermaid Diagram (GitHub Rendered)
+### 📊 Logic Flow
 
 ```mermaid
 flowchart TD
@@ -91,16 +91,16 @@ flowchart TD
 * 5-point sampling detects:
 
   * Warp
-  * Tilt
+  * Improved Bed Stability Verification
   * Uneven expansion
 
 ---
 
 ## 📦 Installation
 
-### 1. Add Config File
+### 1. Download And Add Config File
 
-Create a dedicated config file:
+Download the config file: https://github.com/wildBill83/bed_checker/blob/main/bed_check.cfg
 
 ```bash
 ~/printer_data/config/bed_check.cfg
@@ -144,7 +144,7 @@ bed_check.cfg
 
 ## ▶️ Usage
 
-Run manually:
+Run manually in terminal:
 
 ```gcode
 VERIFY_BED_STABILITY_MULTI BED_TEMP=100 WAIT=30
