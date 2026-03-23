@@ -100,7 +100,7 @@ flowchart TD
 
 ### 1. Download And Add Config File
 
-Download the config file: https://github.com/wildBill83/bed_checker/blob/main/bed_check.cfg
+Download the config file and put in the config folder: https://github.com/wildBill83/bed_checker/blob/main/bed_check.cfg
 
 ```bash
 ~/printer_data/config/bed_check.cfg
@@ -116,15 +116,9 @@ Download the config file: https://github.com/wildBill83/bed_checker/blob/main/be
 
 ---
 
-### 3. Add Macros
+### 3. Customize Macros
 
-Copy the macro definitions into:
-
-```
-bed_check.cfg
-```
-
-> ⚠️ The macros are intentionally kept separate from this README to avoid duplication and drift.
+Open the .cfg file and read through it to customize to you liking using the following parameters.
 
 ---
 
